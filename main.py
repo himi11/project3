@@ -19,15 +19,15 @@ with st.form("form1", clear_on_submit=True):
      loan_purpose = st.selectbox("loan_purpose", ('P1','P2', 'P3','P4'))
      credit_Worthiness= st.selectbox("Credit Worthiness", ('L1','L2') )
      business_or_commercial = st.selectbox("Business/Commercial", ('Yes','No'))
-     rate_of_interest = st.text_area("rate_of_interest")
+     rate_of_interest = st.text_input("rate_of_interest")
      neg_ammortization = st.selectbox("Negative ammortization", ('Not negative','negative'))
      interest_only = st.selectbox("Interest_only" , ('Yes', 'No'))
      lump_sum_payment = st.selectbox("Lump Sum Payment", ('Yes','No'))
-     Secured_by = st.selectbox("Secured by", ('Home','land')) - 
+     Secured_by = st.selectbox("Secured by", ('Home','land'))
 
-     total_units = st.text_area("Total_units")
+     total_units = st.text_input("Total_units")
 
-     income = st.text_area("Income",(""))
+     income = st.text_input("Income",(""))
      
      credit_type = st.selectbox("Credit Type",('EXP','EQUI','CRIF','CIB'))
      credit_Score = st.text_input("Credit Score")
